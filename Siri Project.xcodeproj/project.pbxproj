@@ -15,6 +15,17 @@
 		3F1C8D3F1E26882B00139DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C8D3D1E26882B00139DFC /* LaunchScreen.storyboard */; };
 		3F1C8D4A1E26882B00139DFC /* Siri_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C8D491E26882B00139DFC /* Siri_ProjectTests.swift */; };
 		3F1C8D551E26882B00139DFC /* Siri_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C8D541E26882B00139DFC /* Siri_ProjectUITests.swift */; };
+		3F1C8D691E268B1100139DFC /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C8D681E268B1100139DFC /* IntentHandler.swift */; };
+		3F1C8D721E268B1200139DFC /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1C8D711E268B1200139DFC /* IntentsUI.framework */; };
+		3F1C8D751E268B1200139DFC /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C8D741E268B1200139DFC /* IntentViewController.swift */; };
+		3F1C8D781E268B1200139DFC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C8D761E268B1200139DFC /* MainInterface.storyboard */; };
+		3F1C8D7C1E268B1200139DFC /* Siri Project IntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3F1C8D6F1E268B1200139DFC /* Siri Project IntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3F1C8D7F1E268B1200139DFC /* Siri Project Intents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3F1C8D661E268B1100139DFC /* Siri Project Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3FAEC5EB1E28248B008CC48A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAEC5EA1E28248B008CC48A /* CoreLocation.framework */; };
+		3FAEC5EC1E2824F2008CC48A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C8D681E268B1100139DFC /* IntentHandler.swift */; };
+		3FAEC5ED1E2824F3008CC48A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C8D681E268B1100139DFC /* IntentHandler.swift */; };
+		3FCF30941E289828005E637F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCF30931E289828005E637F /* MediaPlayer.framework */; };
+		3FCF30961E289836005E637F /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCF30951E289836005E637F /* MediaAccessibility.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +43,36 @@
 			remoteGlobalIDString = 3F1C8D2D1E26882B00139DFC;
 			remoteInfo = "Siri Project";
 		};
+		3F1C8D7A1E268B1200139DFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F1C8D261E26882B00139DFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F1C8D6E1E268B1200139DFC;
+			remoteInfo = "Siri Project IntentsUI";
+		};
+		3F1C8D7D1E268B1200139DFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F1C8D261E26882B00139DFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F1C8D651E268B1100139DFC;
+			remoteInfo = "Siri Project Intents";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F1C8D861E268B1200139DFC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3F1C8D7C1E268B1200139DFC /* Siri Project IntentsUI.appex in Embed App Extensions */,
+				3F1C8D7F1E268B1200139DFC /* Siri Project Intents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3F1C8D2E1E26882B00139DFC /* Siri Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Siri Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +89,17 @@
 		3F1C8D501E26882B00139DFC /* Siri ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Siri ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1C8D541E26882B00139DFC /* Siri_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Siri_ProjectUITests.swift; sourceTree = "<group>"; };
 		3F1C8D561E26882B00139DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1C8D661E268B1100139DFC /* Siri Project Intents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Siri Project Intents.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1C8D681E268B1100139DFC /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		3F1C8D6A1E268B1200139DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1C8D6F1E268B1200139DFC /* Siri Project IntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Siri Project IntentsUI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1C8D711E268B1200139DFC /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		3F1C8D741E268B1200139DFC /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		3F1C8D771E268B1200139DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3F1C8D791E268B1200139DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FAEC5EA1E28248B008CC48A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3FCF30931E289828005E637F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3FCF30951E289836005E637F /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +124,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F1C8D631E268B1100139DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1C8D6C1E268B1200139DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCF30961E289836005E637F /* MediaAccessibility.framework in Frameworks */,
+				3FCF30941E289828005E637F /* MediaPlayer.framework in Frameworks */,
+				3FAEC5EB1E28248B008CC48A /* CoreLocation.framework in Frameworks */,
+				3F1C8D721E268B1200139DFC /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +151,9 @@
 				3F1C8D301E26882B00139DFC /* Siri Project */,
 				3F1C8D481E26882B00139DFC /* Siri ProjectTests */,
 				3F1C8D531E26882B00139DFC /* Siri ProjectUITests */,
+				3F1C8D671E268B1100139DFC /* Siri Project Intents */,
+				3F1C8D731E268B1200139DFC /* Siri Project IntentsUI */,
+				3F1C8D701E268B1200139DFC /* Frameworks */,
 				3F1C8D2F1E26882B00139DFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +164,8 @@
 				3F1C8D2E1E26882B00139DFC /* Siri Project.app */,
 				3F1C8D451E26882B00139DFC /* Siri ProjectTests.xctest */,
 				3F1C8D501E26882B00139DFC /* Siri ProjectUITests.xctest */,
+				3F1C8D661E268B1100139DFC /* Siri Project Intents.appex */,
+				3F1C8D6F1E268B1200139DFC /* Siri Project IntentsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +202,36 @@
 			path = "Siri ProjectUITests";
 			sourceTree = "<group>";
 		};
+		3F1C8D671E268B1100139DFC /* Siri Project Intents */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C8D681E268B1100139DFC /* IntentHandler.swift */,
+				3F1C8D6A1E268B1200139DFC /* Info.plist */,
+			);
+			path = "Siri Project Intents";
+			sourceTree = "<group>";
+		};
+		3F1C8D701E268B1200139DFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FCF30951E289836005E637F /* MediaAccessibility.framework */,
+				3FCF30931E289828005E637F /* MediaPlayer.framework */,
+				3FAEC5EA1E28248B008CC48A /* CoreLocation.framework */,
+				3F1C8D711E268B1200139DFC /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F1C8D731E268B1200139DFC /* Siri Project IntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C8D741E268B1200139DFC /* IntentViewController.swift */,
+				3F1C8D761E268B1200139DFC /* MainInterface.storyboard */,
+				3F1C8D791E268B1200139DFC /* Info.plist */,
+			);
+			path = "Siri Project IntentsUI";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +242,13 @@
 				3F1C8D2A1E26882B00139DFC /* Sources */,
 				3F1C8D2B1E26882B00139DFC /* Frameworks */,
 				3F1C8D2C1E26882B00139DFC /* Resources */,
+				3F1C8D861E268B1200139DFC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3F1C8D7B1E268B1200139DFC /* PBXTargetDependency */,
+				3F1C8D7E1E268B1200139DFC /* PBXTargetDependency */,
 			);
 			name = "Siri Project";
 			productName = "Siri Project";
@@ -184,6 +291,40 @@
 			productReference = 3F1C8D501E26882B00139DFC /* Siri ProjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		3F1C8D651E268B1100139DFC /* Siri Project Intents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1C8D831E268B1200139DFC /* Build configuration list for PBXNativeTarget "Siri Project Intents" */;
+			buildPhases = (
+				3F1C8D621E268B1100139DFC /* Sources */,
+				3F1C8D631E268B1100139DFC /* Frameworks */,
+				3F1C8D641E268B1100139DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Siri Project Intents";
+			productName = "Siri Project Intents";
+			productReference = 3F1C8D661E268B1100139DFC /* Siri Project Intents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3F1C8D6E1E268B1200139DFC /* Siri Project IntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1C8D801E268B1200139DFC /* Build configuration list for PBXNativeTarget "Siri Project IntentsUI" */;
+			buildPhases = (
+				3F1C8D6B1E268B1200139DFC /* Sources */,
+				3F1C8D6C1E268B1200139DFC /* Frameworks */,
+				3F1C8D6D1E268B1200139DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Siri Project IntentsUI";
+			productName = "Siri Project IntentsUI";
+			productReference = 3F1C8D6F1E268B1200139DFC /* Siri Project IntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +352,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3F1C8D2D1E26882B00139DFC;
 					};
+					3F1C8D651E268B1100139DFC = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = R2GP5BM8SH;
+						ProvisioningStyle = Automatic;
+					};
+					3F1C8D6E1E268B1200139DFC = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = R2GP5BM8SH;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 3F1C8D291E26882B00139DFC /* Build configuration list for PBXProject "Siri Project" */;
@@ -229,6 +380,8 @@
 				3F1C8D2D1E26882B00139DFC /* Siri Project */,
 				3F1C8D441E26882B00139DFC /* Siri ProjectTests */,
 				3F1C8D4F1E26882B00139DFC /* Siri ProjectUITests */,
+				3F1C8D651E268B1100139DFC /* Siri Project Intents */,
+				3F1C8D6E1E268B1200139DFC /* Siri Project IntentsUI */,
 			);
 		};
 /* End PBXProject section */
@@ -258,6 +411,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F1C8D641E268B1100139DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1C8D6D1E268B1200139DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1C8D781E268B1200139DFC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -267,6 +435,7 @@
 			files = (
 				3F1C8D3A1E26882B00139DFC /* Siri_Project.xcdatamodeld in Sources */,
 				3F1C8D341E26882B00139DFC /* ViewController.swift in Sources */,
+				3FAEC5ED1E2824F3008CC48A /* IntentHandler.swift in Sources */,
 				3F1C8D321E26882B00139DFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +456,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F1C8D621E268B1100139DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1C8D691E268B1100139DFC /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1C8D6B1E268B1200139DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAEC5EC1E2824F2008CC48A /* IntentHandler.swift in Sources */,
+				3F1C8D751E268B1200139DFC /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,6 +485,16 @@
 			isa = PBXTargetDependency;
 			target = 3F1C8D2D1E26882B00139DFC /* Siri Project */;
 			targetProxy = 3F1C8D511E26882B00139DFC /* PBXContainerItemProxy */;
+		};
+		3F1C8D7B1E268B1200139DFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F1C8D6E1E268B1200139DFC /* Siri Project IntentsUI */;
+			targetProxy = 3F1C8D7A1E268B1200139DFC /* PBXContainerItemProxy */;
+		};
+		3F1C8D7E1E268B1200139DFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F1C8D651E268B1100139DFC /* Siri Project Intents */;
+			targetProxy = 3F1C8D7D1E268B1200139DFC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -317,6 +513,14 @@
 				3F1C8D3E1E26882B00139DFC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3F1C8D761E268B1200139DFC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1C8D771E268B1200139DFC /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -416,6 +620,7 @@
 		3F1C8D5A1E26882B00139DFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R2GP5BM8SH;
 				INFOPLIST_FILE = "Siri Project/Info.plist";
@@ -429,6 +634,7 @@
 		3F1C8D5B1E26882B00139DFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R2GP5BM8SH;
 				INFOPLIST_FILE = "Siri Project/Info.plist";
@@ -497,6 +703,58 @@
 			};
 			name = Release;
 		};
+		3F1C8D811E268B1200139DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R2GP5BM8SH;
+				INFOPLIST_FILE = "Siri Project IntentsUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jose-Enterprises.Siri-Project.Siri-Project-IntentsUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3F1C8D821E268B1200139DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R2GP5BM8SH;
+				INFOPLIST_FILE = "Siri Project IntentsUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jose-Enterprises.Siri-Project.Siri-Project-IntentsUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3F1C8D841E268B1200139DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R2GP5BM8SH;
+				INFOPLIST_FILE = "Siri Project Intents/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jose-Enterprises.Siri-Project.Siri-Project-Intents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3F1C8D851E268B1200139DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R2GP5BM8SH;
+				INFOPLIST_FILE = "Siri Project Intents/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jose-Enterprises.Siri-Project.Siri-Project-Intents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,6 +774,7 @@
 				3F1C8D5B1E26882B00139DFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F1C8D5C1E26882B00139DFC /* Build configuration list for PBXNativeTarget "Siri ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +783,7 @@
 				3F1C8D5E1E26882B00139DFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F1C8D5F1E26882B00139DFC /* Build configuration list for PBXNativeTarget "Siri ProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +792,25 @@
 				3F1C8D611E26882B00139DFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1C8D801E268B1200139DFC /* Build configuration list for PBXNativeTarget "Siri Project IntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1C8D811E268B1200139DFC /* Debug */,
+				3F1C8D821E268B1200139DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1C8D831E268B1200139DFC /* Build configuration list for PBXNativeTarget "Siri Project Intents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1C8D841E268B1200139DFC /* Debug */,
+				3F1C8D851E268B1200139DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
